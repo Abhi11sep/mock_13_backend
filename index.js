@@ -65,7 +65,7 @@ app.patch("/user/:id", async (req, res) => {
 })
 
 
-app.listen(8080, async () => {
+app.listen(4500, async () => {
     try {
         await connection;
         console.log("Connected to DataBase")
@@ -73,5 +73,5 @@ app.listen(8080, async () => {
     catch (err) {
         console.log("unable to connect to DataBase");
     }
-    console.log("running on port 8080")
+    console.log("running on port 4500")
 })
